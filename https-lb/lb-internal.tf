@@ -86,7 +86,7 @@ resource "google_compute_region_backend_service" "default" {
     content{
         group           = backend.value.id
         #  balancing_mode  = "CONNECTION"
-        capacity_scaler = 1.0
+        capacity_scaler = 0
     }
   }
 
